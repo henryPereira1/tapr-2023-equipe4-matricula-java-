@@ -25,24 +25,24 @@ public class MatriculaAPIController {
     private MatriculaService service;
 
     @GetMapping
-    public ResponseEntity<List<Matricula>> listaCarros(){
-        var listaCarros = service.getAll();
+    public ResponseEntity<List<Matricula>> listaMatriculas(){
+        var listaMatriculas = service.getAll();
         return 
             new ResponseEntity<List<Matricula>>
-            (listaCarros, HttpStatus.OK);
+            (listaMatriculas, HttpStatus.OK);
     }
     @GetMapping("/{id}")
-    public ResponseEntity<Matricula> buscarCarro(@PathVariable("id")  String id){
-        var carro = service.getById(id);
-        if(carro == null){
+    public ResponseEntity<Matricula> buscarMatricula(@PathVariable("id")  String id){
+        var matricula = service.getById(id);
+        if(matricula == null){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         return 
             new ResponseEntity<Matricula>
-            (carro, HttpStatus.OK);
+            (matricula, HttpStatus.OK);
     }
     @PostMapping
-    public ResponseEntity<Matricula> inserirCarro(@RequestBody Matricula matricula){
+    public ResponseEntity<Matricula> inserirMatricula(@RequestBody Matricula matricula){
         if(matricula == null){
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
@@ -52,7 +52,7 @@ public class MatriculaAPIController {
             (matricula, HttpStatus.OK);
     }
     @DeleteMapping("/{id}")
-    public ResponseEntity<Matricula> removerCarro(@PathVariable("id")  String id){
+    public ResponseEntity<Matricula> removerMatricula(@PathVariable("id")  String id){
         if(id == ""  || id == null){
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
