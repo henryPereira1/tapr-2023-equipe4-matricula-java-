@@ -28,9 +28,9 @@ public class MatriculaServiceImpl implements MatriculaService {
 
     @Override
     public Matricula getById(String id) {
-        var carro = repository.findById(id);
-        if(carro.isPresent())
-            return carro.get();
+        var matricula = repository.findById(id);
+        if(matricula.isPresent())
+            return matricula.get();
         return null;
     }
 
@@ -42,13 +42,13 @@ public class MatriculaServiceImpl implements MatriculaService {
 
     @Override
     public Matricula delete(String id) {
-        var buscaCarro = repository.findById(id);
-        if (buscaCarro.isPresent()){
-            var carro = buscaCarro.get();
+        var buscaMatricula = repository.findById(id);
+        if (buscaMatricula.isPresent()){
+            var matricula = buscaMatricula.get();
 
-            repository.delete(carro);
+            repository.delete(matricula);
 
-            return carro;
+            return matricula;
         }
         return null;
     }

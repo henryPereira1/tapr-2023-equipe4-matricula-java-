@@ -56,12 +56,12 @@ public class MatriculaAPIController {
         if(id == ""  || id == null){
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
-        var carro = service.delete(id);
-        if(carro == null){
+        var matricula = service.delete(id);
+        if(matricula == null){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         return 
             new ResponseEntity<Matricula>
-            (carro, HttpStatus.OK);
+            (matricula, HttpStatus.OK);
     }
 }
