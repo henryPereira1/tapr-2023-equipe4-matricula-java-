@@ -5,13 +5,23 @@ import java.util.List;
 
 import br.edu.univille.microservmatricula.entity.Matricula;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import br.edu.univille.microservmatricula.repository.MatriculaRepository;
 import br.edu.univille.microservmatricula.service.MatriculaService;
 
+import io.dapr.client.DaprClient;
+import io.dapr.client.DaprClientBuilder;
+
 @Service
 public class MatriculaServiceImpl implements MatriculaService {
+    private DaprClient client = new DaprClientBuilder().build();
+    @Value("${app.component.topic.matricula}")
+    private String TOPIC_NAME;
+    @Value("${app.component.service}")
+	private String PUBSUB_NAME;
+
 
     @Autowired
     private MatriculaRepository repository;
@@ -37,7 +47,9 @@ public class MatriculaServiceImpl implements MatriculaService {
     @Override
     public Matricula saveNew(Matricula matricula) {
         matricula.setId(null);
-        return repository.save(matricula);
+        matricula = repository.save(matricula);
+        publicarAtualizacao(matricula);
+        return matricula;
     }
 
     @Override
@@ -52,4 +64,12 @@ public class MatriculaServiceImpl implements MatriculaService {
         }
         return null;
     }
+
+    private void publicarAtualizacao(Matricula matricula){
+        client.publishEvent(
+					PUBSUB_NAME,
+					TOPIC_NAME,
+					matricula).block();
+    }
+
 }
