@@ -1,0 +1,42 @@
+Starting Dapr with id tapr-2023-equipe4-matricula-java. HTTP Port: 42015. gRPC Port: 43201
+Updating metadata for cliPID: 30078
+time="2023-12-02T00:01:59.529913216Z" level=info msg="Starting Dapr Runtime -- version 1.12.2 -- commit f954254ed520409602024ea6d507d0405afa1f07" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:01:59.530026037Z" level=info msg="Log level set to: info" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:01:59.530486935Z" level=warning msg="mTLS is disabled. Skipping certificate request and tls validation" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime.security type=log ver=1.12.2
+time="2023-12-02T00:01:59.53154142Z" level=info msg="metrics server started on :43027/" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:01:59.531814458Z" level=info msg="standalone mode configured" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:01:59.531878357Z" level=info msg="app id: tapr-2023-equipe4-matricula-java" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:01:59.53196543Z" level=info msg="Dapr trace sampler initialized: DaprTraceSampler(P=1.000000)" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:01:59.532401031Z" level=info msg="local service entry announced: tapr-2023-equipe4-matricula-java -> 172.16.5.4:36415" app_id=tapr-2023-equipe4-matricula-java component="mdns (nameResolution/v1)" instance=codespaces-ee95ce scope=dapr.contrib type=log ver=1.12.2
+time="2023-12-02T00:01:59.532451465Z" level=info msg="Initialized name resolution to mdns" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:01:59.532565908Z" level=info msg="Loading components…" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:01:59.533118688Z" level=info msg="Waiting for all outstanding components to be processed…" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:02:02.534274646Z" level=info msg="Component loaded: servicebus-pubsub (pubsub.azure.servicebus.topics/v1)" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:02:02.534351198Z" level=info msg="All outstanding components processed" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:02:02.534379491Z" level=info msg="Loading endpoints…" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:02:02.534596485Z" level=info msg="Waiting for all outstanding http endpoints to be processed…" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:02:02.534628164Z" level=info msg="All outstanding http endpoints processed" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:02:02.534735314Z" level=info msg="gRPC server listening on TCP address: :43201" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime.grpc.api type=log ver=1.12.2
+time="2023-12-02T00:02:02.534770058Z" level=info msg="Enabled gRPC tracing middleware" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime.grpc.api type=log ver=1.12.2
+time="2023-12-02T00:02:02.53479238Z" level=info msg="Enabled gRPC metrics middleware" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime.grpc.api type=log ver=1.12.2
+time="2023-12-02T00:02:02.53488901Z" level=info msg="Registering workflow engine for gRPC endpoint: [::]:43201" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime.grpc.api type=log ver=1.12.2
+time="2023-12-02T00:02:02.534942229Z" level=info msg="API gRPC server is running on port 43201" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:02:02.535009695Z" level=info msg="Enabled max body size HTTP middleware with size 4 MB" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime.http type=log ver=1.12.2
+time="2023-12-02T00:02:02.535039941Z" level=info msg="Enabled tracing HTTP middleware" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime.http type=log ver=1.12.2
+time="2023-12-02T00:02:02.53506077Z" level=info msg="Enabled metrics HTTP middleware" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime.http type=log ver=1.12.2
+time="2023-12-02T00:02:02.535401174Z" level=info msg="HTTP server listening on TCP address: :42015" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime.http type=log ver=1.12.2
+time="2023-12-02T00:02:02.535444274Z" level=info msg="HTTP server is running on port 42015" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:02:02.535472667Z" level=info msg="The request body size parameter is: 4" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:02:02.53552207Z" level=info msg="gRPC server listening on TCP address: :36415" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime.grpc.internal type=log ver=1.12.2
+time="2023-12-02T00:02:02.535549741Z" level=info msg="Enabled gRPC tracing middleware" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime.grpc.internal type=log ver=1.12.2
+time="2023-12-02T00:02:02.535571101Z" level=info msg="Enabled gRPC metrics middleware" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime.grpc.internal type=log ver=1.12.2
+time="2023-12-02T00:02:02.535611566Z" level=info msg="Internal gRPC server is running on port 36415" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+time="2023-12-02T00:02:02.535687047Z" level=info msg="application protocol: http. waiting on port 8080.  This will block until the app is listening on that port." app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.runtime type=log ver=1.12.2
+Updating metadata for app command: /usr/lib/jvm/java-1.17.0-openjdk-amd64/bin/java -jar microservmatricula-0.0.1-SNAPSHOT.jar
+Updating metadata for appPID: 30094
+You're up and running! Dapr logs will appear here.
+
+time="2023-12-02T00:02:41.538072669Z" level=info msg="Received signal 'interrupt'; beginning shutdown" app_id=tapr-2023-equipe4-matricula-java instance=codespaces-ee95ce scope=dapr.signals type=log ver=1.12.2
+
+termination signal received: shutting down
+Exited Dapr successfully

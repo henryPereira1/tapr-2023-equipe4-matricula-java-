@@ -10,7 +10,7 @@ Content-Type: application/json
 
 {
   "numero": "123",
-  "data" "2023-11-12T13:42:14.792Z"
+  "data": "2023-11-12T13:42:14.792Z"
 }
 
 ### Remover a matricula
