@@ -3,7 +3,9 @@ package br.edu.univille.microservmatricula.service.impl;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.edu.univille.microservmatricula.entity.Curso;
 import br.edu.univille.microservmatricula.entity.Matricula;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -53,6 +55,22 @@ public class MatriculaServiceImpl implements MatriculaService {
     }
 
     @Override
+    public Matricula update(String id, Matricula matricula) {
+        var buscaMatriculaAntigo = repository.findById(id);
+        if (buscaMatriculaAntigo.isPresent()){
+            var matriculaAntigo = buscaMatriculaAntigo.get();
+
+            //Atualizar cada atributo do objeto antigo 
+            matriculaAntigo.setNumero(matricula.getNumero());
+            matriculaAntigo = repository.save(matriculaAntigo);
+            publicarAtualizacao(matriculaAntigo);
+            return matriculaAntigo;
+        }
+        return null;
+    }
+
+
+    @Override
     public Matricula delete(String id) {
         var buscaMatricula = repository.findById(id);
         if (buscaMatricula.isPresent()){
@@ -63,6 +81,12 @@ public class MatriculaServiceImpl implements MatriculaService {
             return matricula;
         }
         return null;
+    }
+
+    @Override
+    public Matricula update(Matricula matricula) {
+        return repository.save(matricula);
+        
     }
 
     private void publicarAtualizacao(Matricula matricula){
