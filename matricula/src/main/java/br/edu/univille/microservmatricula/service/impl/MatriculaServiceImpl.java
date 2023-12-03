@@ -83,12 +83,6 @@ public class MatriculaServiceImpl implements MatriculaService {
         return null;
     }
 
-    @Override
-    public Matricula update(Matricula matricula) {
-        return repository.save(matricula);
-        
-    }
-
     private void publicarAtualizacao(Matricula matricula){
         client.publishEvent(
 					PUBSUB_NAME,

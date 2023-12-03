@@ -9,5 +9,4 @@ public interface MatriculaService {
     public Matricula saveNew(Matricula matricula);
     public Matricula delete(String id);
     public Matricula update(String id, Matricula matricula);
-    public Matricula update(Matricula matricula);
 }
