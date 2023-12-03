@@ -1,7 +1,12 @@
-br/edu/univille/microservmatricula/controller/MatriculaAPIController.class
+br/edu/univille/microservmatricula/repository/CursoRepository.class
 br/edu/univille/microservmatricula/config/WebConfig.class
 br/edu/univille/microservmatricula/service/impl/MatriculaServiceImpl.class
 br/edu/univille/microservmatricula/MicroservMatriculaApplication.class
+br/edu/univille/microservmatricula/service/MatriculaService.class
+br/edu/univille/microservmatricula/controller/CursoAPIController.class
+br/edu/univille/microservmatricula/entity/Curso.class
+br/edu/univille/microservmatricula/controller/MatriculaAPIController.class
+br/edu/univille/microservmatricula/service/CursoService.class
+br/edu/univille/microservmatricula/service/impl/CursoServiceImpl.class
 br/edu/univille/microservmatricula/entity/Matricula.class
 br/edu/univille/microservmatricula/repository/MatriculaRepository.class
-br/edu/univille/microservmatricula/service/MatriculaService.class

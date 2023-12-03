@@ -1,7 +1,12 @@
+/workspaces/tapr-2023-equipe4-matricula-java-/matricula/src/main/java/br/edu/univille/microservmatricula/controller/CursoAPIController.java
 /workspaces/tapr-2023-equipe4-matricula-java-/matricula/src/main/java/br/edu/univille/microservmatricula/controller/MatriculaAPIController.java
+/workspaces/tapr-2023-equipe4-matricula-java-/matricula/src/main/java/br/edu/univille/microservmatricula/service/CursoService.java
 /workspaces/tapr-2023-equipe4-matricula-java-/matricula/src/main/java/br/edu/univille/microservmatricula/repository/MatriculaRepository.java
 /workspaces/tapr-2023-equipe4-matricula-java-/matricula/src/main/java/br/edu/univille/microservmatricula/config/WebConfig.java
 /workspaces/tapr-2023-equipe4-matricula-java-/matricula/src/main/java/br/edu/univille/microservmatricula/service/MatriculaService.java
 /workspaces/tapr-2023-equipe4-matricula-java-/matricula/src/main/java/br/edu/univille/microservmatricula/MicroservMatriculaApplication.java
+/workspaces/tapr-2023-equipe4-matricula-java-/matricula/src/main/java/br/edu/univille/microservmatricula/entity/Curso.java
 /workspaces/tapr-2023-equipe4-matricula-java-/matricula/src/main/java/br/edu/univille/microservmatricula/service/impl/MatriculaServiceImpl.java
+/workspaces/tapr-2023-equipe4-matricula-java-/matricula/src/main/java/br/edu/univille/microservmatricula/service/impl/CursoServiceImpl.java
+/workspaces/tapr-2023-equipe4-matricula-java-/matricula/src/main/java/br/edu/univille/microservmatricula/repository/CursoRepository.java
 /workspaces/tapr-2023-equipe4-matricula-java-/matricula/src/main/java/br/edu/univille/microservmatricula/entity/Matricula.java
